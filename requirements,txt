@@ -1,0 +1,10 @@
+AST-RDF Data Lineage Auditor - Dependencias
+Patrón de Arquitectura "Caja Cristalina"
+Core de Extracción y Parseo (Fase 1 y 2)
+rdflib>=6.3.2
+Asegura que las dependencias base de Python sean explícitas
+ast y typing son parte de la librería estándar, pero se documentan por completitud.
+python>=3.9
+Nota: Pydantic se incluye únicamente para que el inspector dinámico
+(inspect_pydantic.py) pueda resolver los esquemas, no se usa para ejecución.
+pydantic>=2.0.0
