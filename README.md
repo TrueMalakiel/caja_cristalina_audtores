@@ -26,9 +26,9 @@ pip install -r requirements.txt
 
 Ejecución de los Auditores en Proyectos Propios
 Si desea aplicar este patrón arquitectónico para auditar su propio simulador o base de código, puede ejecutar la CLI indicando el directorio raíz de su proyecto:
-# Paso 1: Generar el Índice RDF y descubrir jerarquías
+* Paso 1: Generar el Índice RDF y descubrir jerarquías
 python 1_external_auditor/main_auditor.py --project-root /ruta/a/su/proyecto --entry su_modulo.principal --output lineage_output.xml --format xml
-# Paso 2: Extraer el Grafo de Ecuaciones Físicas (Micro-Linaje)
+* Paso 2: Extraer el Grafo de Ecuaciones Físicas (Micro-Linaje)
 python 2_expression_auditor/main_auditor.py --project-root /ruta/a/su/proyecto --rdf lineage_output.xml --output physical_edges.csv
 
 Visualización de la Evidencia Empírica
