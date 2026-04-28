@@ -1,0 +1,9 @@
+Source,Target,Type,Weight
+get_master_recovery_factor_from_data,master_recovery_factor,generates,1
+st.session_state.master_data_live.master_recovery_factor,render_stochastic_tab,consumes,1
+master_recovery_factor,load_silo1_data,consumes,1
+master_data.master_recovery_factor,load_silo1_data,consumes,1
+facies.poes.value,modules.engines.unified_engine.UnifiedPhysicsEngine.calculate_facies_poes,consumes,1
+facies.poes.uncertainty,modules.engines.unified_engine.UnifiedPhysicsEngine.calculate_facies_poes,consumes,1
+facies.q0.value,modules.engines.unified_engine.UnifiedPhysicsEngine.calculate_facies_q0,consumes,1
+facies.q0.uncertainty,modules.engines.unified_engine.UnifiedPhysicsEngine.calculate_facies_q0,consumes,1
